@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+ http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+<modelVersion>4.0.0</modelVersion>
+
+<groupId>com.klef.fsad</groupId>
+<artifactId>HQLMovieProject</artifactId>
+<version>0.0.1-SNAPSHOT</version>
+
+<name>HQLMovieProject</name>
+
+<properties>
+<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<maven.compiler.release>17</maven.compiler.release>
+</properties>
+
+<dependencies>
+
+<!-- Hibernate Core -->
+<dependency>
+<groupId>org.hibernate</groupId>
+<artifactId>hibernate-core</artifactId>
+<version>5.6.15.Final</version>
+</dependency>
+
+<!-- MySQL Connector -->
+<dependency>
+<groupId>mysql</groupId>
+<artifactId>mysql-connector-java</artifactId>
+<version>8.0.33</version>
+</dependency>
+
+<!-- JPA API -->
+<dependency>
+<groupId>javax.persistence</groupId>
+<artifactId>javax.persistence-api</artifactId>
+<version>2.2</version>
+</dependency>
+
+<!-- JUnit (already present for testing) -->
+<dependency>
+<groupId>org.junit.jupiter</groupId>
+<artifactId>junit-jupiter-api</artifactId>
+<scope>test</scope>
+</dependency>
+
+<dependency>
+<groupId>org.junit.jupiter</groupId>
+<artifactId>junit-jupiter-params</artifactId>
+<scope>test</scope>
+</dependency>
+
+</dependencies>
+
+<build>
+<plugins>
+
+<plugin>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>3.13.0</version>
+<configuration>
+<release>17</release>
+</configuration>
+</plugin>
+
+</plugins>
+</build>
+
+</project>
